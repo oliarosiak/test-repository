@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles1.css">
     <title>Test File</title>
 </head>
 
 <body>
-    <div>
+    <div class="class_ssssss">
         <ul>
-            <li>
+            <li class="spysok">
                 Компьютеры и комплектующие
                 <ul>
                     <li>Процессоры</li>
@@ -19,7 +20,7 @@
                     <li>Видеокарты</li>
                 </ul>
             </li>
-            <li>
+            <li class="spysok">
                 Бытовая техника
                 <ul>
                     <li>Холодильники</li>
@@ -27,7 +28,7 @@
                     <li>Стиральные машины</li>
                 </ul>
             </li>
-            <li>
+            <li class="spysok">
                 Товары для дома
                 <ul>
                     <li>Кресла</li>
@@ -147,7 +148,69 @@
             Ще нам браття українці
             Усміхнеться доля
         </pre>
+
+        <p>Все права защищены &copy; Lex, 2020</p>
+        <p>Все права защищены &#169; Lex, 2020</p>
+        <p>Все права защищены &#xa9; Lex, 2020</p>
     </div>
+
+    <!--Приклад додавання відео-->
+    <!--атрибут autoplay-->
+    <div>
+        <video src="http://techslides.com/demos/sample-videos/small.webm"
+            poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls loop
+            preload="auto"></video>
+    </div>
+    <div>
+        <video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
+            <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+            <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg" />
+        </video>
+
+       <p>
+            <audio controls>
+                <source src="song.mp3" type="audio/mp3" />
+                <source src="song.ogg" type="audio/ogg" />
+            </audio>
+       </p>
+
+       <p>
+        <video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
+                   
+            Your browser does not support the <code>video</code> element.
+        </video>
+        
+        <audio controls>
+                    
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+       </p>
+    </div>
+
+    <div>
+        <!--встроенные стили (inline styles)-->
+        <p style="color:blue; font-size:24px;">Этот текст будет синим.</p>
+        
+        <!--встроенная таблица стилей (embedded stylesheet)-->
+        <!-- <head>
+            <style type="text/css">
+                p {
+                    color: blue;
+                    font-size: 24px;
+                }
+            </style>
+        </head> -->
+
+        <!--внешняя таблица стилей (external stylesheet)-->
+        <!--
+            <head>
+                <link rel="stylesheet" href="./css/styles.css" />
+            </head>
+        -->
+    </div>
+
+
     
 </body>
 
