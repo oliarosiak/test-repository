@@ -1,0 +1,39 @@
+:root {
+  --main-text-color: #757575;
+  --second-text-color: #212121;
+  --third-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --main-backgroung-color: #2f303a;
+  --secong-background-color: #f5f4fa;
+}
+
+/* - - - - - - УТИЛІТИ - - - - - - */
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Header Logo */
+.header-logo,
+.footer-logo {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.header-logo.span {
+  color: var(--second-text-color);
+}
+
+.footer {
+  background-color: var(--main-backgroung-color);
+}
+
+.footer-logo.span {
+  color: var(--third-text-color);
+}
