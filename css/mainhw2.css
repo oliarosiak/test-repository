@@ -30,6 +30,11 @@
   color: var(--second-text-color);
 }
 
+.site-nav .link {
+  text-transform: capitalize;
+  text-align: justify;
+}
+
 .footer {
   background-color: var(--main-backgroung-color);
 }
