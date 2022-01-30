@@ -1,127 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form-page</title>
+    <title>Main page</title>
     <link rel="stylesheet" href="./css/main.min.css">    
 </head>
-
 <body class="body--index">
-    <header>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="./index.html">Головна сторінка</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./animation.html">Анімація</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./hb.html">День народження</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="./fon_animation.html">Фон с движущимися простыми фигурами: крестиками, окружностями и квадратами.</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header header__main-page">
+        <h1 class="header__title">Main menu:</h1>
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="./form.html">Форма</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="./animation.html">Анімація</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="./hb.html">День народження</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="./fon-animation.html">Фон с движущимися простыми фигурами: крестиками, окружностями и
+                    квадратами.</a>
+            </li>
+        </ul>
     </header>
-    <form class="form js-speaker-form">
-        <div class="form-field">
-            <label for="name">Ім'я</label>
-            <input type="text" name="user-name" id="name" placeholder="Ольга Ольгівна" autofocus>
-        </div>
-
-        <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="user-tel" id="tel">
-        </div>
-
-        <div class="form-field">
-            <label for="mail">Електронна пошта</label>
-            <input type="email" name="user-email" id="mail" placeholder="example@mail.com">
-        </div>
-
-        <div class="group" role="group">
-            <h2 class="group-title">Тема доповіді</h2>
-            <ul class="topic-options">
-                <li>
-                    <input type="checkbox" name="topic" value="html" id="html">
-                    <label for="html">HTML</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="topic" value="css" id="css">
-                    <label for="css">CSS</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="topic" value="js" id="js">
-                    <label for="js">JavaScript</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="group" role="group">
-            <h2 class="group-title">Рівень вашої експертності</h2>
-
-            <ul class="expirience-options">
-                <li>
-                    <input type="radio" name="experience" value="junior" id="junior">
-                    <label for="junior">Junior</label>
-                </li>
-                <li>
-                    <input type="radio" name="experience" value="middle" id="middle">
-                    <label for="middle">Middle</label>
-                </li>
-                <li>
-                    <input type="radio" name="experience" value="senior" id="senior">
-                    <label for="senior">Senior</label>
-                </li>              
-            </ul>
-        </div>
-
-        <div class="form-field">
-            <label for="datetime">Час доповіді</label>
-            <input type="datetime-local" name="date-time" id="datetime" class="date" min="2021-10-10T10:00:00"
-                max="2021-10-15T18:00:00">
-        </div>
-
-        <div class="form-field">
-            <label for="pdf">Завантажте копію доповіді в форматі pdf</label>
-            <input type="file" name="user-pdf" id="pdf">
-        </div>
-
-        <div class="form-field">
-            <label for="comment">Залиште свій коментар</label>
-            <textarea name="comment" id="comment" rows="10" placeholder="Уточніть деталі доповіді"></textarea>
-        </div>
-
-        <div class="form-field">
-            <input type="checkbox" name="agreement" id="agreement">
-            <label for="agreement">Will work for food</label>
-        </div>
-
-        <button type="submit">Відправити</button>
-    </form>
-
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script>
-
-
+    <script type="module" src="./js/index.js"></script>
 </body>
-
 </html>
